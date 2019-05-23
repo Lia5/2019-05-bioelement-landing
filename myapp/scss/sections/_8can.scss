@@ -1,0 +1,71 @@
+.can {
+    max-width: 1500px;
+    &__title {
+        background: linear-gradient(90deg, #76E7ED 3%, #EACD83);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: #76E7ED;
+    }
+    .subtitle {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+
+        color: #3A3A63;
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__item {
+        padding: 20px;
+        width: 33%;
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+            border-bottom: 1px solid #AAD3F2;
+        }
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(4),
+        &:nth-child(5) {
+            border-right: 1px solid #AAD3F2;
+        }
+        
+    }
+    &__icon {
+        background-repeat: no-repeat;
+        width: 45px;
+        height: 45px;
+        &--capsules {
+            background-image: url(../img/capsules.svg);
+        }
+        &--food {
+            background-image: url(../img/healthy-food.svg);
+        }
+        &--gym {
+            background-image: url(../img/gym.svg);
+        }
+        &--dumbbell {
+            background-image: url(../img/dumbbell.svg);
+        }
+        &--girl {
+            background-image: url(../img/girl.svg);
+        }
+        &--brain {
+            background-image: url(../img/brain.svg);
+        }
+
+
+        
+    }
+    &__text {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        /* or 137% */
+        color: #3A3A63;
+    }
+}

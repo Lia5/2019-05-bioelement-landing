@@ -1,0 +1,75 @@
+.consult {
+    font-weight: 300;
+    display: flex;
+    max-width: 1316px;
+    padding-right: 225px;
+    &-wrap {
+        background: linear-gradient(71.68deg, rgba(174, 235, 215, 0.7) -13.43%, rgba(245, 228, 205, 0.7) 81.75%);
+
+    }
+    &__title {
+        font-size: 30px;
+        line-height: 36px;
+        /* or 120% */
+        color: #7B7BB3;
+    }
+    &__left {
+        background: url(../img/bg-consult.png);
+        background-repeat: no-repeat;
+        background-position: top left;
+        position: relative;
+        top: -50px;
+        padding-top: 100px;
+        padding-left: 40%;
+        &--woman {
+            background-image: url(../img/bg-consult2.png);
+            background-position: top left 20%;
+        }
+
+        p {
+            position: absolute;
+            bottom: 0;
+            right: 40px;
+            font-size: 14px;
+            line-height: 20px;
+            /* or 143% */
+            color: #ADADAD;
+            max-width: 162px;
+            right: 13%;
+        }
+    }
+    &__form {
+        max-width: 350px;
+        padding: 50px 0 63px;
+    }
+    
+
+}
+.form-line {
+    margin-top: 10px;
+    input, textarea {
+        width: 100%;
+        font-weight: 300;
+        padding: 5px 19px 4px;
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 5px;
+        font-size: 14px;
+        line-height: 36px;
+        /* identical to box height, or 257% */
+        color: #ADADAD;
+        border: none;
+    }
+    textarea {
+        min-height: 90px;
+    }
+    p {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 18px;
+        /* or 150% */
+        color: #ADADAD;
+    }
+    .btn {
+        min-width: 280px;
+    }
+}

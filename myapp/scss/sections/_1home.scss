@@ -1,0 +1,125 @@
+.home {
+    max-width: 1145px;
+    padding-top: 235px;
+    background: url(../img/bg-home.jpg);
+    background-position: top right 208px;
+    background-repeat: no-repeat;
+    min-height: 654px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin-top: -24px;
+   .title {
+    font-size: 65px;
+    line-height: 62px;
+    letter-spacing: 0.02em;
+    color: #7B7BB3;
+
+   }
+   .subtext {
+    color: #3A3A63;
+    max-width: 417px;
+   }
+    &__part {
+        width: 50%;
+    }
+    &__title {
+        line-height: 1;
+    }
+    &__subtitle {
+        background: linear-gradient(90deg, #DE9D5D 17%, #EACD83);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: #DE9D5D;
+        margin-left: 45px;
+    }
+    &__body {
+        display: flex;
+    }
+    &__pic {
+        width: 50%;
+        position: relative;
+    }
+    &__item {
+        position: absolute;
+        line-height: 1;
+        &:nth-child(1) {
+            max-width: 204px;
+            top: -98px;
+            left: 37px;
+        }
+        &:nth-child(2) {
+            max-width: 161px;
+            top: -28px;
+            left: 280px;
+        }
+        &:nth-child(3) {
+            max-width: 143px;
+            top: 121px;
+            left: 302px;
+        }
+        &:nth-child(4) {
+            max-width: 296px;
+            top: 241px;
+            left: 264px;
+        }
+    }
+    &__list {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+        color: #3A3A63;
+
+        opacity: 0.4;
+    }
+
+    &__circle {
+        position: absolute;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        left: -19px;
+        bottom: -26px;
+        &--red {
+            background: #EACD83;
+            &:after {
+                background: rgba(251, 244, 226, 0.8);
+            }
+        }
+        &--darkblue {
+            background: #A3BFF3;
+            &:after {
+                background: rgba(163, 191, 243, 0.2);
+            }
+        }
+        &--blue {
+            background: #AEEBD7;
+            &:after {
+                background: rgba(174, 235, 215, 0.3);
+            }
+
+        }
+        &--lightred {
+            background: #F5E4CD;
+            &:after {
+                background: rgba(245, 228, 205, 0.4);
+            }
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+//home

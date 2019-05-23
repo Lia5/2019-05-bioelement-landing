@@ -1,0 +1,29 @@
+section
+    .wrap.remember
+        .title.text-center 
+            | Упоминания о методе
+            .remember__subtitle в СМИ 
+        .subtext.text-center Печатные СМИ о методе
+        .print
+            .print__item 
+                .print__foto(style="background-image: url(img/print/news1.jpg)")
+                .print__descr
+                    .print__title Как накормить Шарапову
+                    .print__text «Русский репортер» №40 (269)
+                    a(href="#").print__more Читать →
+            .print__item 
+                .print__foto(style="background-image: url(img/print/news2.jpg)")
+                .print__descr
+                    .print__title Эксперты рассказали, каких микроэлементов не хватает для долголетия в разных регионах России 
+                    .print__text «Комсомольская правда»
+                    a(href="#").print__more Читать →
+        .subtext.text-center Телерепортажи
+        .tabs-wrap.tabs-wrap--video
+            ul.tabs
+                li.active(rel='rem1') Почему именно волосы?
+                li(rel='rem2') Почему формируется дисбаланс химических элементов в организме человека?
+            .tab_container
+                h3.d_active.tab_drawer_heading(rel='rem1') Почему именно волосы?
+                #rem1.tab_content(style="background-image: url(img/video1.jpg)") 
+                h3.tab_drawer_heading(rel='rem2') Почему формируется дисбаланс химических элементов в организме человека?
+                #rem2.tab_content(style="background-image: url(img/video1.jpg)") 

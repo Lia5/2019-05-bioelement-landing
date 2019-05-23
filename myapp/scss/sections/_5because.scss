@@ -1,0 +1,112 @@
+.because {
+    font-weight: 400;
+    &-wrap {
+        background: url(../img/bg-because.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    max-width: 1340px;
+    
+    &__title {
+        text-align: center;
+        
+        font-size: 40px;
+        line-height: 1.13;
+        span {
+            background: linear-gradient(90deg, #DE9D5D, #A3BFF3 67%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: #A3BFF3;
+        }
+    }
+    &__subtitle {
+        text-align: center;
+        font-size: 26px;
+        line-height: 31px;
+        text-align: center;
+        color: #323232;
+        
+        max-width: 952px;
+        margin: 0 auto;
+    }
+    &__item {
+        max-width: 267px;
+        span {
+            color: #DE9D5D;
+        }
+    }
+    &__top {
+        background: url(../img/because-top.svg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        display: flex;
+        .because__item {
+            &:nth-child(1) {
+                margin-top: 30px;
+            }
+            &:nth-child(2) {
+                margin-top: 20px;
+            }
+            &:nth-child(3) {
+                margin-top: 10px;
+            }
+            &:nth-child(4) {
+                margin-top: 15px;
+            }
+        }
+    }
+    &__text {
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        color: #FFFFFF;
+        max-width: 623px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+    }
+    &__bottom {
+        position: relative;
+        color: #fff;
+        background: url(../img/because-bottom.svg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        text-align: center;
+        
+        ul {
+            display: flex;
+            position: relative;
+            z-index: 2;
+        }
+        .because__item {
+            &:nth-child(1) {
+                margin-top: 30px;
+            }
+            &:nth-child(2) {
+                margin-top: 20px;
+            }
+            &:nth-child(3) {
+                margin-top: 10px;
+            }
+            &:nth-child(4) {
+                margin-top: 15px;
+            }
+        }
+        &:after {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            content: "";
+            width: 100%;
+            height: 259px;
+            background: linear-gradient(0deg, #534B3B -21.23%, rgba(83, 75, 59, 0) 186.3%);
+            filter: blur(100px);
+        }
+    }
+    &__btn {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+    }
+
+}

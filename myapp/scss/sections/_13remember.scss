@@ -1,0 +1,58 @@
+.remember {
+    &__subtitle {
+        background: linear-gradient(90deg, #C6EBC2 29%, #76E7ED);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: #76E7ED;
+    }
+    .subtext {
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 31px;
+        text-align: center;
+
+        color: #3A3A63;
+    }
+}
+.print {
+    display: flex;
+    &__item {
+        display: flex;
+    }
+    &__foto {
+        width: 240px;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.37;
+        color: #3A3A63;
+    }
+    &__text {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 1.57;
+        color: #ADADAD;
+    }
+    &__more {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #255EF3;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.tabs-wrap--video {
+    .tab_content {
+        width: 650px;
+        height: 330px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top left;
+    }
+}

@@ -1,0 +1,45 @@
+.author {
+    max-width: 1173px;
+    &__body {
+        background: url(../img/bg-author.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    &__name {
+        font-size: 26px;
+        line-height: 1.15;
+        font-weight: 700;
+        color: #3A3A63;
+    }
+    &__bio {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.37;
+        color: #323232;
+    }
+    &__list {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.37;
+        color: #323232;
+    }
+    &__item {
+        position: relative;
+        padding-left: 12px;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            background: #A3BFF3;
+            border-radius: 50%;
+            top: 7px;
+            left: 0;
+        }
+    }
+    &__link {
+        &:before {
+            content: url(../img/icons/wikipedia.svg)
+        }
+    }
+}
