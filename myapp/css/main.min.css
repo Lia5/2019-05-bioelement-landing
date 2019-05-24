@@ -2864,7 +2864,6 @@ ul.tabs li.active {
 }
 
 .tabs-wrap--video .tab_content {
-  width: 650px;
   height: 330px;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -3051,9 +3050,27 @@ ul.tabs li.active {
   max-width: 1146px;
 }
 
+.contacts__body {
+  width: 50%;
+  background-color: #fff;
+}
+
+.contacts__adress {
+  font-weight: 300;
+}
+
+.contacts__adress span {
+  font-weight: 400;
+}
+
+.contacts__link {
+  color: #1E54DF;
+}
+
 #map {
   width: 100%;
   height: 746px;
+  background: green;
 }
 
 .copy {

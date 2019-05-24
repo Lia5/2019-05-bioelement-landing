@@ -172,28 +172,45 @@ e.preventDefault(); //отменяем стандартное поведение
   ymaps.ready(init);
   function init(){     
     var myMap = new ymaps.Map("map", {
-          center: [55.729012, 37.629215],
+          center: [55.756764, 37.639543],
           zoom: 15
       }),
       
       // Создаем метку с помощью вспомогательного класса.
-      myPlacemark1 = new ymaps.Placemark([55.729012, 37.629215], {
+      myPlacemark1 = new ymaps.Placemark([55.761021, 37.649795], {
       // Свойства.
       // Содержимое иконки, балуна и хинта.
-      balloonContentBody: 'Академия Героев',
-      balloonContentFooter: 'Москва, ул.Зацепа 41, офис 107',
-      hintContent: 'Академия Героев'
+      balloonContentBody: 'Bioelement',
+      balloonContentFooter: 'г. Москва, ул.Покровка д.33, оф.14',
+      hintContent: 'Bioelement'
   }, {
       // Опции.
       // Своё изображение иконки метки.
       iconLayout: 'default#imageWithContent',
-      iconImageHref: 'img/icons/marker.png',
+      iconImageHref: 'img/icons/marker.svg',
       // Размеры метки.
-      iconImageSize: [66, 100]
+      iconImageSize: [57, 78]
   });
+      // Создаем метку с помощью вспомогательного класса.
+      myPlacemark2 = new ymaps.Placemark([55.752911, 37.655688], {
+        // Свойства.
+        // Содержимое иконки, балуна и хинта.
+        balloonContentBody: 'Bioelement',
+        balloonContentFooter: 'г. Москва, ул. Земляной вал, д. 46',
+        hintContent: 'Bioelement'
+    }, {
+        // Опции.
+        // Своё изображение иконки метки.
+        iconLayout: 'default#imageWithContent',
+        iconImageHref: 'img/icons/marker2.svg',
+        // Размеры метки.
+        iconImageSize: [57, 78]
+    });
+
 
   // Добавляем все метки на карту.
   myMap.geoObjects.add(myPlacemark1);
+  myMap.geoObjects.add(myPlacemark2);
   myMap.behaviors.disable('scrollZoom');
 
   };
