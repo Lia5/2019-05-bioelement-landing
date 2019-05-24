@@ -1,5 +1,11 @@
 .can {
+    &-wrap {
+        margin-bottom: 3rem;
+    }
     max-width: 1500px;
+    .title {
+        margin-bottom: -15px;
+    }
     &__title {
         background: linear-gradient(90deg, #76E7ED 3%, #EACD83);
         -webkit-background-clip: text;
@@ -15,12 +21,13 @@
         color: #3A3A63;
     }
     &__items {
+        margin-top: 15px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
     &__item {
-        padding: 20px;
+        padding: 18px 25px 40px;
         width: 33%;
         &:nth-child(1),
         &:nth-child(2),
@@ -33,9 +40,39 @@
         &:nth-child(5) {
             border-right: 1px solid #AAD3F2;
         }
+        &:nth-child(1) {
+            padding-right: 6%;
+            padding-left: 9%;
+        }
+        &:nth-child(2) {
+            max-width: 397px;
+            padding-right: 6%;
+            padding-left: 5%;
+        }
+        &:nth-child(3) {
+            padding-right: 17%;
+            padding-left: 2%;
+        }
+        &:nth-child(4) {
+            padding-top: 3%;
+            padding-right: 3%;
+            padding-left: 9%;
+        }
+        &:nth-child(5) {
+            padding-top: 3%;
+            max-width: 397px;
+            padding-right: 6%;
+            padding-left: 5%;
+        }
+        &:nth-child(6) {
+            padding-top: 3%;
+            padding-right: 14%;
+            padding-left: 2%;
+        }
         
     }
     &__icon {
+        margin-bottom: 6px;
         background-repeat: no-repeat;
         width: 45px;
         height: 45px;

@@ -1,12 +1,13 @@
 .consult {
+    &-wrap {
+        margin-bottom: 2.3rem;
+    }
+    position: relative;
     font-weight: 300;
     display: flex;
     max-width: 1316px;
-    padding-right: 225px;
-    &-wrap {
-        background: linear-gradient(71.68deg, rgba(174, 235, 215, 0.7) -13.43%, rgba(245, 228, 205, 0.7) 81.75%);
-
-    }
+    padding-right: 211px;
+    background: linear-gradient(71.68deg, rgba(174, 235, 215, 0.7) -13.43%, rgba(245, 228, 205, 0.7) 81.75%);
     &__title {
         font-size: 30px;
         line-height: 36px;
@@ -20,10 +21,11 @@
         position: relative;
         top: -50px;
         padding-top: 100px;
-        padding-left: 40%;
+        padding-left: 43%;
+        width: 69%;
         &--woman {
             background-image: url(../img/bg-consult2.png);
-            background-position: top left 20%;
+            background-position: top left 35%;
         }
 
         p {
@@ -35,12 +37,20 @@
             /* or 143% */
             color: #ADADAD;
             max-width: 162px;
-            right: 13%;
+            right: 8%;
         }
     }
     &__form {
         max-width: 350px;
-        padding: 50px 0 63px;
+        padding: 50px 0 99px;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        background-color: #fff;
+        width: 100%;
+        height: 50px;
     }
     
 
@@ -68,6 +78,7 @@
         line-height: 18px;
         /* or 150% */
         color: #ADADAD;
+        margin: -9px 0 0;
     }
     .btn {
         min-width: 280px;

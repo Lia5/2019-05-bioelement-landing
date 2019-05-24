@@ -1,0 +1,119 @@
+.diag {
+    &-wrap {
+        background-color: rgba(118, 231, 237, 0.3);
+        background: linear-gradient(218.8deg, rgba(163, 191, 243, 0.3) -3.81%, rgba(118, 231, 237, 0.3) 97.98%);
+    }
+    &__title {
+        background: linear-gradient(90deg, #DE9D5D, #EACD83);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: #EACD83;
+    }
+    .subtext {
+        color: #3A3A63;
+    }
+    font-weight: 300;
+    max-width: 1213px;
+
+    &__body {
+        display: flex;
+    }
+    &__left {
+        width: 42%;
+        background: url(../img/diag-pic.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+    }
+    &__price {
+        position: absolute;
+        bottom: 23px;
+        font-size: 16px;
+        line-height: 19px;
+        color: #255EF3;
+        padding-left: 29px;
+        padding-bottom: 15px;
+        span {
+            font-weight: 700;
+            font-size: 19px;
+        }
+    }
+    &__list {
+        
+    }
+    &__items {
+        width: 58%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 50%;
+        max-width: 274px;
+        margin-bottom: 21px;
+    }
+
+    &__icon {
+        width: 42px;
+        height: 42px;
+        background-repeat: no-repeat;
+        margin-bottom: 20px;
+        &--clipboard {
+            background-image: url(../img/clipboard.svg);
+        }
+        &--caution {
+            background-image: url(../img/caution.svg);
+        }
+        &--restaurant {
+            background-image: url(../img/restaurant.svg);
+        }
+        &--report {
+            background-image: url(../img/medical-report.svg);
+        }
+        &--email {
+            background-image: url(../img/diag-email.svg);
+        }
+        &--report {
+            background-image: url(../img/diag-gps.svg);
+        }
+        &--health {
+            background-image: url(../img/diag-health.svg);
+        }
+
+    }
+    &__lists {
+        display: flex;
+        justify-content: space-between;
+        .diag__icon {
+            width: 45px;
+            height: 45px;
+        }
+    }
+    &__list {
+        flex-basis: 0;
+        flex-grow: 1;
+        position: relative;
+        margin-right: 50px;
+        background: rgba(255, 255, 255, 0.6);
+        padding: 56px 10px 30px 40px;
+            /* overflow: hidden; */
+        font-size: 16px;
+        line-height: 1.37;
+        color: #3A3A63;
+        &:after {
+            content: "";
+            position: absolute;
+            right: -46px;
+            top: 50%;
+            transform: translate(0, -50%) ;
+            border-top: 120px solid transparent;
+            border-left: 46px solid rgba(255, 255, 255, 0.6);
+            border-bottom: 120px solid transparent
+        }
+        &:last-child {
+            margin-right: 20px;
+        }
+    }
+}

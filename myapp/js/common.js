@@ -35,7 +35,7 @@ if(jQuery('.help__slider').length) {
       prevArrow: '<div class="arrow-prev"></div>',
       nextArrow: '<div class="arrow-next"></div>',
       centerMode: true,
-      centerPadding: '160px',
+      centerPadding: '480px',
       responsive: [
         {
           breakpoint: 600,
@@ -167,7 +167,36 @@ e.preventDefault(); //отменяем стандартное поведение
 	   of last tab */
 	$('ul.tabs li').last().addClass("tab_last");
 	
+  // MAP
+      
+  ymaps.ready(init);
+  function init(){     
+    var myMap = new ymaps.Map("map", {
+          center: [55.729012, 37.629215],
+          zoom: 15
+      }),
+      
+      // Создаем метку с помощью вспомогательного класса.
+      myPlacemark1 = new ymaps.Placemark([55.729012, 37.629215], {
+      // Свойства.
+      // Содержимое иконки, балуна и хинта.
+      balloonContentBody: 'Академия Героев',
+      balloonContentFooter: 'Москва, ул.Зацепа 41, офис 107',
+      hintContent: 'Академия Героев'
+  }, {
+      // Опции.
+      // Своё изображение иконки метки.
+      iconLayout: 'default#imageWithContent',
+      iconImageHref: 'img/icons/marker.png',
+      // Размеры метки.
+      iconImageSize: [66, 100]
+  });
 
+  // Добавляем все метки на карту.
+  myMap.geoObjects.add(myPlacemark1);
+  myMap.behaviors.disable('scrollZoom');
+
+  };
 
 });
 

@@ -1,4 +1,8 @@
 .remember {
+    max-width: 1146px;
+    .title {
+        margin-bottom: 20px;
+    }
     &__subtitle {
         background: linear-gradient(90deg, #C6EBC2 29%, #76E7ED);
         -webkit-background-clip: text;
@@ -16,8 +20,12 @@
 }
 .print {
     display: flex;
+    margin-top: 33px;
+    margin-bottom: 57px;
     &__item {
         display: flex;
+        justify-content: space-between;
+        width: 50%;
     }
     &__foto {
         width: 240px;
@@ -25,6 +33,13 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
+    }
+    &__descr {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px 25px 10px 5px;
     }
     &__title {
         font-weight: 400;
@@ -39,20 +54,36 @@
         color: #ADADAD;
     }
     &__more {
+        margin-top: auto;
         font-size: 16px;
         line-height: 1.5;
         color: #255EF3;
+        align-self: flex-end;
         &:hover {
             text-decoration: underline;
         }
     }
 }
 .tabs-wrap--video {
+    margin-top: 24px;
+    ul.tabs {
+        width: 42%;
+        margin-top: 10px;
+    }
+    .tabs li {
+        margin-bottom: 60px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
     .tab_content {
         width: 650px;
         height: 330px;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top left;
+    }
+    .tab_container {
+        width: 55%;
     }
 }

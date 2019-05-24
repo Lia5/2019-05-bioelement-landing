@@ -135,9 +135,14 @@ ul,li {
 	text-align: center;
 	background: linear-gradient(66.79deg, #255EF3 21.93%, #AAD3F2 117.25%);
 	border-radius: 60px;
+	&--big {
+		padding: 25px;
+		min-width: 300px;
+	}
 	&:hover {
 		background: linear-gradient(66.79deg, #7FE2E1 21.93%, #B9EAC9 117.25%);
 	}
+
 
 }
 
@@ -159,6 +164,8 @@ ul,li {
 @import "sections/11author";
 @import "sections/12help";
 @import "sections/13remember";
+@import "sections/14diag";
+@import "sections/15contacts";
 
 
 @import "sections/footer"; 

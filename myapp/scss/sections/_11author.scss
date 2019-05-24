@@ -1,6 +1,10 @@
 .author {
+    &-wrap {
+        margin-bottom: 8rem;
+    }
     max-width: 1173px;
     &__body {
+        padding: 92px 50% 40px 98px;
         background: url(../img/bg-author.jpg);
         background-repeat: no-repeat;
         background-position: center center;
@@ -10,6 +14,10 @@
         line-height: 1.15;
         font-weight: 700;
         color: #3A3A63;
+        margin-bottom: 24px;
+        span {
+            display: block;
+        }
     }
     &__bio {
         font-weight: 300;
@@ -18,6 +26,7 @@
         color: #323232;
     }
     &__list {
+        margin: 10px;
         font-weight: 300;
         font-size: 16px;
         line-height: 1.37;
@@ -26,6 +35,7 @@
     &__item {
         position: relative;
         padding-left: 12px;
+        margin-bottom: 12px;
         &:before {
             content: "";
             position: absolute;
@@ -38,8 +48,15 @@
         }
     }
     &__link {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.50;
+        padding: 9px 0 0 0;
+        color: #255EF3;
         &:before {
-            content: url(../img/icons/wikipedia.svg)
+            content: url(../img/icons/wikipedia.svg);
+            position: relative;
+            top: 6px;
         }
     }
 }

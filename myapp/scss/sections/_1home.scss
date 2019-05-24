@@ -5,20 +5,20 @@
     background-position: top right 208px;
     background-repeat: no-repeat;
     min-height: 654px;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   margin-top: -24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -24px;
    .title {
-    font-size: 65px;
-    line-height: 62px;
-    letter-spacing: 0.02em;
-    color: #7B7BB3;
+        font-size: 65px;
+        line-height: 62px;
+        letter-spacing: 0.02em;
+        color: #7B7BB3;
 
    }
    .subtext {
-    color: #3A3A63;
-    max-width: 417px;
+        color: #3A3A63;
+        max-width: 417px;
    }
     &__part {
         width: 50%;
