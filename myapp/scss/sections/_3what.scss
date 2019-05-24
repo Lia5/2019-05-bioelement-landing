@@ -8,14 +8,18 @@
     padding-bottom: 92px;
     .subtext {
         max-width: 940px;
-        margin: 0 auto;
+  //      margin: 0 auto;
+        margin-left: 9%;
     }
     .title {
+        max-width: 940px;
         margin-bottom: 20px;
+        margin-left: 9%;
     }
     &__title {
         max-width: 502px;
         margin: 0 auto;
+        
     }
     &__items {
         display: flex;

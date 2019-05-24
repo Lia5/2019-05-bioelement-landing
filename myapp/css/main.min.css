@@ -1393,14 +1393,14 @@ nav a {
 
 .home__item:nth-child(1) {
   max-width: 204px;
-  top: -98px;
+  top: -119px;
   left: 37px;
 }
 
 .home__item:nth-child(2) {
   max-width: 161px;
   top: -28px;
-  left: 280px;
+  left: 287px;
 }
 
 .home__item:nth-child(3) {
@@ -1412,7 +1412,7 @@ nav a {
 .home__item:nth-child(4) {
   max-width: 296px;
   top: 241px;
-  left: 264px;
+  left: 244px;
 }
 
 .home__list {
@@ -1666,11 +1666,13 @@ nav a {
 
 .what .subtext {
   max-width: 940px;
-  margin: 0 auto;
+  margin-left: 9%;
 }
 
 .what .title {
+  max-width: 940px;
   margin-bottom: 20px;
+  margin-left: 9%;
 }
 
 .what__title {

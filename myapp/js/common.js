@@ -173,7 +173,7 @@ e.preventDefault(); //отменяем стандартное поведение
   function init(){     
     var myMap = new ymaps.Map("map", {
           center: [55.757766, 37.657640],
-          zoom: 15
+          zoom: 14
       }),
       
       // Создаем метку с помощью вспомогательного класса.
