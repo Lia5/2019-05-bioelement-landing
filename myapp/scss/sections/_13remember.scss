@@ -67,8 +67,12 @@
 .tabs-wrap--video {
     margin-top: 24px;
     ul.tabs {
-        width: 42%;
+        width: 40%;
         margin-top: 10px;
+        margin-left: 40px;
+        li {
+            padding: 22px 19px 23px;
+        }
     }
     .tabs li {
         margin-bottom: 60px;

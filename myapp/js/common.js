@@ -132,7 +132,7 @@ e.preventDefault(); //отменяем стандартное поведение
     // http://www.entheosweb.com/tutorials/css/tabs.asp
     $(".tab_content").hide();
     $(".tab_content:first").show();
-
+    $(".tab_content--first").show();
   /* if in tab mode */
     $("ul.tabs li").click(function() {
 		
@@ -172,7 +172,7 @@ e.preventDefault(); //отменяем стандартное поведение
   ymaps.ready(init);
   function init(){     
     var myMap = new ymaps.Map("map", {
-          center: [55.756764, 37.639543],
+          center: [55.757766, 37.657640],
           zoom: 15
       }),
       

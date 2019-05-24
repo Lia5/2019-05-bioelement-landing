@@ -505,7 +505,7 @@
           </ul>
           <div class="tab_container">
             <h3 rel="vid1" class="d_active tab_drawer_heading">Вести-Интервью. Анатолий Скальный: «Медицина и экология идут рука об руку»</h3>
-            <div id="vid1" style="background-image: url(img/video1.jpg)" class="tab_content"> </div>
+            <div id="vid1" style="background-image: url(img/video1.jpg)" class="tab_content tab_content--first"> </div>
             <h3 rel="vid2" class="tab_drawer_heading">Скальный Анатолий Викторович в Программе "События" на НТВ 22.11.16</h3>
             <div id="vid2" style="background-image: url(img/video1.jpg)" class="tab_content"> </div>
           </div>
@@ -523,28 +523,31 @@
               Цена: <span>5400 руб. </span>
             </div>
           </div>
-          <ul class="diag__items">
-            <li class="diag__item"> 
-              <div class="diag__icon diag__icon--clipboard"></div>
-              <div class="diag__text">Подробная инфографика по содержанию элементов в Вашем организме</div>
-            </li>
-            <li class="diag__item"> 
-              <div class="diag__icon diag__icon--caution"></div>
-              <div class="diag__text">Подробная информация по элементам с критическими значениями</div>
-            </li>
-            <li class="diag__item"> 
-              <div class="diag__icon diag__icon--restaurant"></div>
-              <div class="diag__text">Индивидуальные рекомендации по питанию</div>
-            </li>
-            <li class="diag__item"> 
-              <div class="diag__icon diag__icon--report"></div>
-              <div class="diag__text">Заключение врача</div>
-            </li>
-          </ul>
+          <div class="diag__right">
+            <ul class="diag__items">
+              <li class="diag__item"> 
+                <div class="diag__icon diag__icon--clipboard"></div>
+                <div class="diag__text">Подробная инфографика по содержанию элементов в Вашем организме</div>
+              </li>
+              <li class="diag__item"> 
+                <div class="diag__icon diag__icon--caution"></div>
+                <div class="diag__text">Подробная информация по элементам с критическими значениями</div>
+              </li>
+              <li class="diag__item"> 
+                <div class="diag__icon diag__icon--restaurant"></div>
+                <div class="diag__text">Индивидуальные рекомендации по питанию</div>
+              </li>
+              <li class="diag__item"> 
+                <div class="diag__icon diag__icon--report"></div>
+                <div class="diag__text">Заключение врача</div>
+              </li>
+            </ul>
+            <div class="btn btn--big">Заказать диагностику</div>
+          </div>
         </div>
         <div class="title text-center">
            
-          После<span class="diag__title">оформления</span>и оплаты заказа 
+          После <span class="diag__title">оформления </span>и оплаты заказа 
         </div>
         <div class="diag__body">
           <ul class="diag__lists">
@@ -577,7 +580,7 @@
           <div class="contacts__adress"> <span>Электронная почта: </span><a href="mailto:info@bioelement.su">info@bioelement.su</a></div>
           <div class="contacts__text">
              
-            Если Вы хотите принести образец самостоятельно в АНО ЦБМ, то предварительно оформите и оплатите заказ на<a href="#" class="contacts__link">нашем сайте</a>
+            Если Вы хотите принести образец самостоятельно в АНО ЦБМ, то предварительно оформите и оплатите заказ на <a href="#" class="contacts__link">нашем сайте</a>
           </div>
           <div class="contacts__adress"> <span>Отправить почтой: </span>8888888 г. Москва, ул.Покровка д.33, оф.14</div>
           <div class="contacts__adress"> <span>Принести самостоятельно: </span>АНО ЦБМ, г. Москва, ул. Земляной вал, д. 46</div>
@@ -585,22 +588,18 @@
       </div>
     </section>
     <footer class="footer">
-      <div class="wrap">
-        <div class="footer__body">
+      <div class="footer__body">
+        <div class="wrap">
           <div class="logo">
             <div class="logo__icon"><img src="img/logo.png" alt="logo"></div>
           </div>
-          <ul class="footer__menu">
-            <li class="active order1"><a href="index.html">Home</a></li>
-            <li><a href="#">Locabulary</a></li>
-            <li><a href="#" data-menuAnchor="#contactus">Contact us</a></li>
-          </ul>
+          <div class="contacts-menu"><a href="mailto:info@bioelement.su">info@bioelement.su</a><a href="tel:+79998192969" class="footer__tel">+7 (999) 819-2969</a></div>
         </div>
-        <div class="footer__bottom"><a href="#">Terms and conditions</a>
-          <div class="footer__development">
-             
-            Design and development <a href="#">— insaim</a>
-          </div><a href="">Refound Policy</a><a class="copy"><img src="img/copy.png" alt="perfect english"></a>
+      </div>
+      <div class="wrap footer__bottom"><a href="#">Политика конфиденциальности</a>
+        <div class="footer__development">
+           
+          Сайт разработан —<a href="#">insaim                </a>
         </div>
       </div>
     </footer>

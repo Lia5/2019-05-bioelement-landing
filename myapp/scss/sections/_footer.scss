@@ -1,6 +1,25 @@
 .footer {
    
-   
+   .wrap {
+       max-width: 1146px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+   &__body {
+       padding-bottom: 14px;
+       border-bottom: 2px solid rgba(170, 211, 242, 0.3);
+   }
+   &__tel {
+    font-size: 22px;
+    padding-left: 30px;
+   }
+   .logo {
+       padding-left: 28px;
+   }
+   &__bottom {
+    padding: 24px 0 33px 28px;
+   }
 }
 .copy {
     position: absolute;

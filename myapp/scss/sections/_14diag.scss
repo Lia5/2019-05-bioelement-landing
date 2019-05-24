@@ -1,5 +1,12 @@
 .diag {
+    padding-top: 95px;
+    padding-bottom: 91px;
+    .title {
+        max-width: 547px;
+        margin: 12px auto 24px;
+    }
     &-wrap {
+        margin-bottom: 0;
         background-color: rgba(118, 231, 237, 0.3);
         background: linear-gradient(218.8deg, rgba(163, 191, 243, 0.3) -3.81%, rgba(118, 231, 237, 0.3) 97.98%);
     }
@@ -11,6 +18,9 @@
     }
     .subtext {
         color: #3A3A63;
+        max-width: 588px;
+        text-align: center;
+        margin: 0 auto;
     }
     font-weight: 300;
     max-width: 1213px;
@@ -19,7 +29,7 @@
         display: flex;
     }
     &__left {
-        width: 42%;
+        width: 46%;
         background: url(../img/diag-pic.png);
         background-repeat: no-repeat;
         background-position: center center;
@@ -29,22 +39,28 @@
     }
     &__price {
         position: absolute;
-        bottom: 23px;
-        font-size: 16px;
-        line-height: 19px;
+        bottom: 39px;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, 0);
+        font-size: 20px;
+        line-height: 22px;
         color: #255EF3;
         padding-left: 29px;
         padding-bottom: 15px;
         span {
             font-weight: 700;
-            font-size: 19px;
+            font-size: 31px;
+            padding: 0 0 0 8px;
         }
     }
-    &__list {
-        
+    &__right {
+        width: 48%;
+        padding-top: 121px;
+        padding-bottom: 33px;
     }
     &__items {
-        width: 58%;
+        
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -52,14 +68,14 @@
     &__item {
         width: 50%;
         max-width: 274px;
-        margin-bottom: 21px;
+        margin-bottom: 41px;
     }
 
     &__icon {
         width: 42px;
         height: 42px;
         background-repeat: no-repeat;
-        margin-bottom: 20px;
+        margin-bottom: 17px;
         &--clipboard {
             background-image: url(../img/clipboard.svg);
         }
@@ -75,7 +91,7 @@
         &--email {
             background-image: url(../img/diag-email.svg);
         }
-        &--report {
+        &--gps {
             background-image: url(../img/diag-gps.svg);
         }
         &--health {
@@ -86,6 +102,7 @@
     &__lists {
         display: flex;
         justify-content: space-between;
+        padding-left: 66px;
         .diag__icon {
             width: 45px;
             height: 45px;
@@ -95,7 +112,7 @@
         flex-basis: 0;
         flex-grow: 1;
         position: relative;
-        margin-right: 50px;
+        margin-right: 83px;
         background: rgba(255, 255, 255, 0.6);
         padding: 56px 10px 30px 40px;
             /* overflow: hidden; */
@@ -105,15 +122,15 @@
         &:after {
             content: "";
             position: absolute;
-            right: -46px;
+            right: -66px;
             top: 50%;
             transform: translate(0, -50%) ;
             border-top: 120px solid transparent;
-            border-left: 46px solid rgba(255, 255, 255, 0.6);
+            border-left: 66px solid rgba(255, 255, 255, 0.6);
             border-bottom: 120px solid transparent
         }
         &:last-child {
-            margin-right: 20px;
+            margin-right: 66px;
         }
     }
 }
