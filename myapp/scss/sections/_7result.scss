@@ -4,15 +4,16 @@
     }
     font-weight: 400;
     max-width: 1145px;
-    padding-left: 54px;
+    padding-left: 37px;
     .title {
         margin-bottom: 28px;
+        margin-left: -37px;
     }
     &__body {
         display: flex;
     }
     &__left {
-        width: 42%;
+        width: 41%;
         background: url(../img/bg-result.png);
         background-repeat: no-repeat;
         background-position: center center;

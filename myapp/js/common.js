@@ -10,7 +10,7 @@ if(jQuery('.lic__slider').length) {
       dots: true,
       responsive: [
         {
-          breakpoint: 600,
+          breakpoint: 1000,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -35,15 +35,42 @@ if(jQuery('.help__slider').length) {
       prevArrow: '<div class="arrow-prev"></div>',
       nextArrow: '<div class="arrow-next"></div>',
       centerMode: true,
-      centerPadding: '480px',
+      centerPadding: '520px',
       responsive: [
         {
-          breakpoint: 600,
+          breakpoint: 1830,
           settings: {
+            centerPadding: '420px',
+          }
+        },{
+          breakpoint: 1630,
+          settings: {
+            centerPadding: '320px',
+          }
+        },{
+          breakpoint: 1430,
+          settings: {
+            centerPadding: '220px',
+          }
+        },{
+          breakpoint: 1230,
+          settings: {
+            centerPadding: '120px',
+          }
+        },{
+          breakpoint: 1000,
+          settings: {
+            centerPadding: '20px',
             centerMode: false,
             dots: true
           }
-        }  
+        }, {
+          breakpoint: 600,
+          settings: {
+            dots: true
+          }
+        } 
+       
 
         // You can unslick at a given breakpoint now by adding:
         // settings: "unslick"
@@ -52,9 +79,6 @@ if(jQuery('.help__slider').length) {
     });
   }
 // }
-if($('.styled').length) {
-		$('.styled').styler();
-	};
 
 //menu
     var menu = document.querySelector('.menu-toggle');
@@ -64,24 +88,6 @@ if($('.styled').length) {
         var navGamb = document.querySelector('.menu-toggle');
         navGamb.classList.toggle('active');
     });
-//anhor-menu
-// $('.main-menu a').on('click', function(e){
-//   var dataName = $(this).attr('data-menuAnchor');
-//   e.preventDefault();
-//   var id = $('[data-anchor="'+ dataName + '"]');
-//   $('html,body').stop().animate({ scrollTop: $(id).offset().top }, 1000);
-// });
-//scrolling
-
-// var $page = $('html, body');
-// $('a[href*="#"]').click(function() {
-//     $page.animate({
-      
-//         scrollTop: $($.attr(this, 'href')).offset().top
-//     }, 400);
-//     return false;
-// });
-
 
 
 if( window.innerWidth > 720 || window.screen.width > 720){
@@ -129,7 +135,6 @@ e.preventDefault(); //отменяем стандартное поведение
 
 //tabs
 // tabbed content
-    // http://www.entheosweb.com/tutorials/css/tabs.asp
     $(".tab_content").hide();
     $(".tab_content:first").show();
     $(".tab_content--first").show();
@@ -166,7 +171,37 @@ e.preventDefault(); //отменяем стандартное поведение
 	   to add border to right side
 	   of last tab */
 	$('ul.tabs li').last().addClass("tab_last");
-	
+  
+//popups
+$(function() {
+  //----- OPEN
+  $('[data-popup-open]').on('click', function(e)  {
+      var targeted_popup_class = jQuery(this).attr('data-popup-open');
+      console.log(targeted_popup_class);
+      $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350).css("display", "flex");
+
+      e.preventDefault();
+  });
+
+  //----- CLOSE
+  $('[data-popup-close]').on('click', function(e)  {
+      var targeted_popup_class = jQuery(this).attr('data-popup-close');
+      $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+
+      e.preventDefault();
+  });
+  //------ jQuery: Закрытие элемента по клику за пределами его области (вне элемента)
+  $(document).mouseup(function (e){ // событие клика по веб-документу
+      var div = $(".popup-inner"); // тут указываем ID элемента
+      if (!div.is(e.target) // если клик был не по нашему блоку
+      && div.has(e.target).length === 0) { // и не по его дочерним элементам
+        div.parent().hide(); // скрываем его родителя (оверфлоу фон)
+      }
+  });
+});
+
+
+
   // MAP
       
   ymaps.ready(init);
@@ -211,16 +246,16 @@ e.preventDefault(); //отменяем стандартное поведение
   // Добавляем все метки на карту.
   myMap.geoObjects.add(myPlacemark1);
   myMap.geoObjects.add(myPlacemark2);
-  myMap.behaviors.disable('scrollZoom');
+  // myMap.behaviors.disable('scrollZoom');
 
   };
 
+
+
+
+
+
+
 });
 
 
-
-document.addEventListener('DOMContentLoaded', function(){
-
-
-
-});

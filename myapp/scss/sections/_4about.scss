@@ -1,6 +1,6 @@
 .about {
     max-width: 1450px;
-    padding-left: 172px;
+    padding-left: 142px;
     
     &-wrap {
         padding-bottom: 102px;
@@ -25,7 +25,7 @@
         background-position: top right;
         position: relative;
         top: -40px;
-        padding-bottom: 172px;
+        padding-bottom: 182px;
         z-index: 1;
     }
     &__left {
@@ -67,10 +67,12 @@
         background: rgba(255, 249, 233, 0.5);
         .about__text {
             position: absolute;
-            left: 136px;
+            left: 143px;
             text-align: left;
-            top: -88px;
-            max-width: 240px;
+            top: -92px;
+            max-width: 238px;
+            border-radius: 10px;
+            padding: 15px 21px;
         }
         .about__right {
             padding-top: 89px;
@@ -83,7 +85,7 @@
         }
     }
     &__img {
-        margin-top: -79px;
+        margin-top: -77px;
         img {
             width: 100%;
         }

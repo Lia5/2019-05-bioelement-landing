@@ -1,6 +1,6 @@
 .consult {
     &-wrap {
-        margin-bottom: 2.3rem;
+        margin-bottom: 2.7rem;
     }
     position: relative;
     font-weight: 300;
@@ -21,11 +21,16 @@
         position: relative;
         top: -50px;
         padding-top: 100px;
-        padding-left: 43%;
+        padding-left: 41%;
         width: 69%;
         &--woman {
             background-image: url(../img/bg-consult2.png);
-            background-position: top left 35%;
+            background-position: top left 30%;
+            padding-top: 93px;
+            padding-left: 40%;
+            p {
+                right: 19%;
+            }
         }
 
         p {

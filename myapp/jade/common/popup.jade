@@ -1,0 +1,16 @@
+.popup(data-popup='popup-1')
+    .popup-inner.popup-scroll
+        h2.popup__title Заказать конверт
+        .popup__form
+            form(action="#")
+                .form-line
+                    input(type="text" name="name" placeholder="Имя" required)
+                .form-line
+                    input(type="text" name="telemeil" placeholder="Телефон или почта" required)
+                .form-line 
+                    textarea(placeholder="Комментарий" name="coment")
+                .form-line     
+                    p Нажимая на кнопку “Получить консультацию”, вы соглашаетесь на обработку персональных данных
+                .form-line.text-center
+                    .btn.btn--thin Получить консультацию
+        a.popup-close(data-popup-close='popup-1', href='#')

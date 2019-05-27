@@ -1,4 +1,7 @@
 .home {
+    &-wrap {
+        margin-bottom: 5.7rem;
+    }
     max-width: 1145px;
     padding-top: 235px;
     background: url(../img/bg-home.jpg);
@@ -50,18 +53,18 @@
         }
         &:nth-child(2) {
             max-width: 161px;
-            top: -28px;
-            left: 287px;
+            top: -55px;
+            left: 277px;
         }
         &:nth-child(3) {
             max-width: 143px;
-            top: 121px;
-            left: 302px;
+            top: 98px;
+            left: 326px;
         }
         &:nth-child(4) {
             max-width: 296px;
-            top: 241px;
-            left: 244px;
+            top: 216px;
+            left: 271px;
         }
     }
     &__list {
@@ -94,13 +97,19 @@
         }
         &--blue {
             background: #AEEBD7;
+            left: -40px;
+            bottom: 3px;
             &:after {
                 background: rgba(174, 235, 215, 0.3);
+                
+            
             }
 
         }
         &--lightred {
             background: #F5E4CD;
+            left: -23px;
+            bottom: -18px;
             &:after {
                 background: rgba(245, 228, 205, 0.4);
             }

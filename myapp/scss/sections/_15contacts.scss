@@ -7,8 +7,8 @@
     }
     max-width: 1146px;
     &__body {
-        padding: 55px 41px;
-        width: 55%;
+        padding: 55px 37px 62px 0;
+        width: 51%;
         background-color: #fff;
     }
     &__tel {
@@ -30,11 +30,10 @@
 
 }
 #map {
-    width: 60%;
-    margin-left: 40%;
+    width: 49%;
+    margin-left: 51%;
     height: 746px;
     height: 100%; 
-    background: green;
     position: absolute;
     left: 0;
     top: 0;

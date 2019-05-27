@@ -13,6 +13,30 @@
     <title>Bioelement </title>
   </head>
   <body>
+    <div data-popup="popup-1" class="popup">
+      <div class="popup-inner popup-scroll">
+        <h2 class="popup__title">Заказать конверт</h2>
+        <div class="popup__form">
+          <form action="#">
+            <div class="form-line">
+              <input type="text" name="name" placeholder="Имя" required>
+            </div>
+            <div class="form-line">
+              <input type="text" name="telemeil" placeholder="Телефон или почта" required>
+            </div>
+            <div class="form-line"> 
+              <textarea placeholder="Комментарий" name="coment"></textarea>
+            </div>
+            <div class="form-line">    
+              <p>Нажимая на кнопку “Получить консультацию”, вы соглашаетесь на обработку персональных данных</p>
+            </div>
+            <div class="form-line text-center">
+              <div class="btn btn--thin">Получить консультацию</div>
+            </div>
+          </form>
+        </div><a data-popup-close="popup-1" href="#" class="popup-close"></a>
+      </div>
+    </div>
     <header>
       <nav class="wrap">
         <div class="nav">
@@ -31,15 +55,13 @@
                 <li><a href="index.html#smi">СМИ о нас</a></li>
                 <li><a href="index.html#contactus">Контакты</a></li>
               </ul>
-              <div class="contacts-menu"><a href="mailto:info@bioelement.su">info@bioelement.su</a><a href="tel:+79998192969">+7 (999) 819-2969</a>
-                <div class="btn">Заказать конверт</div>
-              </div>
+              <div class="contacts-menu"><a href="mailto:info@bioelement.su">info@bioelement.su</a><a href="tel:+79998192969">+7 (999) 819-2969</a><a data-popup-open="popup-1" href="#" class="btn">Заказать конверт</a></div>
             </nav>
           </div>
         </div>
       </nav>
     </header>
-    <section>
+    <section class="home-wrap">
       <div class="wrap home">
         <div class="home__body">
           <div class="home__part">
@@ -372,8 +394,7 @@
             <li class="author__item">Заведующий кафедрой «Медицинской элементологии РУДН»</li>
             <li class="author__item">Основатель АНО «Центр Биотической Медицины», мед. лицензия №ЛО-77-01-007851 </li>
             <li class="author__item">Руководитель лаборатории молекулярной диетологии Сеченовского университета </li>
-          </ul>
-          <div class="author__link">Читать на Wikipedia</div>
+          </ul><a href="#" class="author__link">Читать на Wikipedia</a>
         </div>
       </div>
     </section>
@@ -473,7 +494,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section class="remember-wrap">
       <div class="wrap remember">
         <div class="title text-center">
            
@@ -505,9 +526,9 @@
           </ul>
           <div class="tab_container">
             <h3 rel="vid1" class="d_active tab_drawer_heading">Вести-Интервью. Анатолий Скальный: «Медицина и экология идут рука об руку»</h3>
-            <div id="vid1" style="background-image: url(img/video1.jpg)" class="tab_content tab_content--first"> </div>
+            <div id="vid1" style="background-image: url(img/video1.jpg)" class="tab_content tab_content--first"> <a data-fancybox href="https://www.youtube.com/watch?v=f7zk9qLbSSs" class="video-btn"></a></div>
             <h3 rel="vid2" class="tab_drawer_heading">Скальный Анатолий Викторович в Программе "События" на НТВ 22.11.16</h3>
-            <div id="vid2" style="background-image: url(img/video1.jpg)" class="tab_content"> </div>
+            <div id="vid2" style="background-image: url(img/video1.jpg)" class="tab_content"> <a data-fancybox href="https://www.youtube.com/watch?v=f7zk9qLbSSs" class="video-btn"></a></div>
           </div>
         </div>
       </div>
@@ -545,10 +566,7 @@
             <div class="btn btn--big">Заказать диагностику</div>
           </div>
         </div>
-        <div class="title text-center">
-           
-          После <span class="diag__title">оформления </span>и оплаты заказа 
-        </div>
+        <div class="title text-center title--second">После <span class="diag__title">оформления </span>и оплаты заказа </div>
         <div class="diag__body">
           <ul class="diag__lists">
             <li class="diag__list"> 
@@ -599,7 +617,7 @@
       <div class="wrap footer__bottom"><a href="#">Политика конфиденциальности</a>
         <div class="footer__development">
            
-          Сайт разработан —<a href="#">insaim                </a>
+          Сайт разработан — <a href="#">insaim                </a>
         </div>
       </div>
     </footer>

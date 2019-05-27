@@ -139,6 +139,9 @@ ul,li {
 		padding: 25px;
 		min-width: 300px;
 	}
+	&--thin {
+		padding: 15px;
+	}
 	&:hover {
 		background: linear-gradient(66.79deg, #7FE2E1 21.93%, #B9EAC9 117.25%);
 	}
@@ -166,8 +169,7 @@ ul,li {
 @import "sections/13remember";
 @import "sections/14diag";
 @import "sections/15contacts";
-
-
 @import "sections/footer"; 
+@import "sections/popup"; 
 
 @import "media"; // Always at the end

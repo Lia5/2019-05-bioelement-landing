@@ -1,9 +1,12 @@
 .diag {
-    padding-top: 95px;
-    padding-bottom: 91px;
+    padding-top: 90px;
+    padding-bottom: 99px;
     .title {
-        max-width: 547px;
-        margin: 12px auto 24px;
+        max-width: 612px;
+        margin: -5px auto 24px;
+        &--second {
+            max-width: 525px;
+        }
     }
     &-wrap {
         margin-bottom: 0;
@@ -23,24 +26,24 @@
         margin: 0 auto;
     }
     font-weight: 300;
-    max-width: 1213px;
+    max-width: 1425px;
 
     &__body {
         display: flex;
     }
     &__left {
-        width: 46%;
+        width: 44%;
         background: url(../img/diag-pic.png);
         background-repeat: no-repeat;
-        background-position: center center;
+        background-position: top -21px left;
         display: flex;
         align-items: flex-end;
         position: relative;
     }
     &__price {
         position: absolute;
-        bottom: 39px;
-        left: 50%;
+        bottom: 54px;
+        left: 56%;
         margin-right: -50%;
         transform: translate(-50%, 0);
         font-size: 20px;
@@ -57,7 +60,7 @@
     &__right {
         width: 48%;
         padding-top: 121px;
-        padding-bottom: 33px;
+        padding-bottom: 55px;
     }
     &__items {
         
@@ -102,7 +105,8 @@
     &__lists {
         display: flex;
         justify-content: space-between;
-        padding-left: 66px;
+        padding-left: 10%;
+        padding-right: 10%;
         .diag__icon {
             width: 45px;
             height: 45px;
@@ -114,7 +118,7 @@
         position: relative;
         margin-right: 83px;
         background: rgba(255, 255, 255, 0.6);
-        padding: 56px 10px 30px 40px;
+        padding: 47px 10px 30px 40px;
             /* overflow: hidden; */
         font-size: 16px;
         line-height: 1.37;

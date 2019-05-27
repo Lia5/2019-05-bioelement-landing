@@ -1,4 +1,5 @@
 .problems {
+    max-width: 1216px;
     background: url(../img/bg-problems.jpg);
     background-repeat: no-repeat;
     min-height: 840px;
@@ -29,7 +30,9 @@
 
         &--darkblue {
             top: 58px;
-            left: 18%;
+            left: 5%;
+            padding-left: 30px;
+            max-width: 380px;
             .problems__text {
                 &:before {
                      background: #7895CB;
@@ -40,12 +43,12 @@
             }
             .problems__circle {
                 top: 0;
-                right: 21%;
+                right: 22%;
             }
         }
         &--green {
             top: 88px;
-            left: 63%;
+            left: 68%;
             .problems__text {
                 &:before {
                      background: #C6EBC2;
@@ -61,7 +64,7 @@
         }
         &--red {
             top: 341px;
-            left: 24%;
+            left: 14%;
             .problems__text {
                 &:before {
                      background: #EACD83;
@@ -73,12 +76,12 @@
             .problems__circle {
                 transform: scale(1.5);
                 top: 0;
-                right: 19%;
+                right: 21%;
             }
         }
         &--blue {
             top: 425px;
-            left: 64%;
+            left:70%;
             .problems__text {
                 &:before {
                      background: #76E7ED;
@@ -90,7 +93,7 @@
             .problems__circle {
                 transform: scale(1.5);
                 top: 0;
-                left: -21%;
+                left: -23%;
             }
         }
 
@@ -104,7 +107,7 @@
     }
     &__text {
         position: relative;
-        padding-left: 12px;
+        padding-left: 20px;
         margin-bottom: 7px;
         &:before {
             content: "";

@@ -1,10 +1,14 @@
 .author {
     &-wrap {
         margin-bottom: 8rem;
+        margin-top: -10px;
     }
     max-width: 1173px;
+    .title {
+        margin-bottom: 43px;
+    }
     &__body {
-        padding: 92px 50% 40px 98px;
+        padding: 99px 52% 48px 77px;
         background: url(../img/bg-author.jpg);
         background-repeat: no-repeat;
         background-position: center center;

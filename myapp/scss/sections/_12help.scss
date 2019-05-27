@@ -65,37 +65,39 @@
     height: 50px;
     position: absolute;
     z-index: 1;
-    bottom: -50px;
+    bottom: -49px;
     right: 0;
-    background: #AAD3F2;
+    background: #ACE8F0;
     &:before {
         content: "";
         position: absolute;
         top: 30%;
-        left: 50%;
+        left: 44%;
         margin-right: -50%;
         transform: translate(-50%, -50%);
-        width: 22px;
-        height: 22px;
-        border: 1px solid #fff;
+        width: 15px;
+        height: 15px;
+        border: 2px solid #fff;
         border-right: none;
         border-top: none;
         transform: rotate(45deg);
     }
 }
 .arrow-prev {
-    right: 34%;
+    right: 33.7%;
+    z-index: 2;
     &:after {
         content: "";
         position: absolute;
-        width: 1px;
+        width: 2px;
         height: 80%;
-        right: 0;
+        top: 10%;
+        right: -2px;
         background: #fff;
     }
 }
 .arrow-next {
-    right: 30%;
+    right: 29.7%;
     &:before {
         transform: rotate(-135deg);
     }
@@ -111,7 +113,7 @@
     justify-content: space-between;
     &__title {
         width: 40%;
-        padding: 28px 0 0 20px;
+        padding: 28px 0 0 0;
     }
     &__body {
         width: 60%;
