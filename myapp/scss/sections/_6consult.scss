@@ -1,6 +1,9 @@
 .consult {
+    
     &-wrap {
         margin-bottom: 2.7rem;
+        overflow: hidden;
+        padding-top: 53px;
     }
     position: relative;
     font-weight: 300;
@@ -52,9 +55,10 @@
     &:after {
         content: "";
         position: absolute;
-        bottom: 0;
+        bottom: -1px;
+        left: -1px;
         background-color: #fff;
-        width: 100%;
+        width: 101%;
         height: 50px;
     }
     

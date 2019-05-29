@@ -67,7 +67,8 @@ ul.tabs li.active {
 	clear: both;
 	float: left;
 	width: 48%;
-	overflow: auto;
+    overflow: auto;
+
 }
 
 .tab_content {
@@ -82,7 +83,7 @@ ul.tabs li.active {
 		display: none;
 	}
 	.tab_drawer_heading {
-
+        font-weight: 400;
 		display: block;
 		cursor: pointer;
 		-webkit-touch-callout: none;
