@@ -28,6 +28,9 @@
     &__item {
         display: flex;
         justify-content: space-between;
+        &-wrap {
+            width: 50%;
+        }
     }
     &__foto {
         width: 240px;
@@ -69,6 +72,9 @@
 }
 .tabs-wrap--video {
     margin-top: 12px;
+    .tab_drawer_heading:after {
+        content: none;
+    }
     ul.tabs {
         width: 40%;
         margin-top: 24px;

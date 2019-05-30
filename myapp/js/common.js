@@ -52,36 +52,21 @@ if($('.help__slider').length) {
         {
           breakpoint: 1830,
           settings: {
-            centerPadding: '420px',
+            centerMode: false
           }
-        },{
-          breakpoint: 1630,
-          settings: {
-            centerPadding: '320px',
-          }
-        },{
-          breakpoint: 1430,
-          settings: {
-            centerPadding: '220px',
-          }
-        },{
-          breakpoint: 1230,
-          settings: {
-            centerPadding: '120px',
-          }
-        },{
-          breakpoint: 1000,
-          settings: {
-            centerPadding: '20px',
-            centerMode: false,
-            dots: true
-          }
-        }, {
-          breakpoint: 600,
-          settings: {
-            dots: true
-          }
-        } 
+        }
+        // ,{
+        //   breakpoint: 1630,
+        //   settings: {
+        //     centerMode: false,
+        //     dots: true
+        //   }
+        // }, {
+        //   breakpoint: 600,
+        //   settings: {
+        //     dots: true
+        //   }
+        // } 
        
 
         // You can unslick at a given breakpoint now by adding:
@@ -92,7 +77,7 @@ if($('.help__slider').length) {
   }
 // }
 
-//  if( window.innerWidth < 481 || window.screen.width < 481){
+ if( window.innerWidth < 481 || window.screen.width < 481){
   if($('.print__slider').length) {
     $('.print__slider').slick({
       slidesToShow: 2,
@@ -111,7 +96,7 @@ if($('.help__slider').length) {
       ]
     });
   }
-//  }
+ }
 
 
 //menu
@@ -131,6 +116,7 @@ if( window.innerWidth > 720 || window.screen.width > 720){
 var linkNav = document.querySelectorAll('.main-menu [href*="#"]'), //выбираем все ссылки к якорю на странице
 V = 0; // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
 }
+
 
 for (var i = 0; i < linkNav.length; i++) {
 linkNav[i].addEventListener('click', function (e) { //по клику на ссылку
@@ -165,7 +151,37 @@ e.preventDefault(); //отменяем стандартное поведение
 
 }, false);
 
-}
+};
+
+var move = document.querySelectorAll('.move-a[href*="#"]'), //выбираем все ссылки к якорю на странице
+V = 0.2; 
+for (var i = 0; i < move.length; i++) {
+  move[i].addEventListener('click', function (e) { //по клику на ссылку
+      var w = window.pageYOffset, // производим прокрутка прокрутка
+        hash = this.href.replace(/[^#]*(.*)/, '$1'); // к id элемента, к которому нужно перейти
+        console.log(hash);
+    t = document.querySelector(hash).getBoundingClientRect().top, // отступ от окна браузера до id
+        start = null;
+  e.preventDefault(); //отменяем стандартное поведение
+  
+  
+    requestAnimationFrame(step); // подробнее про функцию анимации [developer.mozilla.org]
+    function step(time) {
+        if (start === null) start = time;
+        var progress = time - start,
+            r = (t < 0 ? Math.max(w - progress / V, w + t) : Math.min(w + progress / V, w + t));
+        window.scrollTo(0, r);
+        if (r != w + t) {
+            requestAnimationFrame(step)
+        } else {
+            location.hash = hash // URL с хэшем
+        }
+    }
+  
+  }, false);
+  
+  }
+
 
 //tabs
 // tabbed content
